@@ -3,48 +3,38 @@
 <head>
   <title>SpringConference2012</title>
 	<%= csrf_meta_tag %>
-	<!--[if lt IE9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<~[endif]-->
-	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-	<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+	<%= stylesheet_link_tag 'styles.css' %>
 </head>
 <body class="twoColFixRtHdr">
 
 <div id="container">
   <div id="header">
-
-   <nav class="round">
-     <ul>
-       <li><%= link_to "Login", '#' %></li>
-     </ul>
-   </nav>
    <%= image_tag("header_logo.png", :alt => "Toastmasters Logo") %>
-   
+
     
+    <h1>DISTRICT 42 Spring Conference 2012</h1>
+
 <!-- Drop-down menu -->
     
 	<div id="nav">
 		<ul>
 			<li class="first"><%= link_to "Home", root_path %></li>
-			<li><%= link_to "Weekend Agenda", agenda_path %></li>
+			<li><%= link_to "Registration", '#' %></li>
 			<li><a href="#">Conference</a>
 				<ul>					
-					<li><%= link_to "Feature Speakers and Events", feature_speakers_and_events_path %></li>
-					<li><%= link_to "Photo Gallery", photo_gallery_path %></li>
-					
+					<li><%= link_to "Weekend Agenda", '#' %></li>
+					<li><%= link_to "Feature Speakers and Events", '#' %></li>
+					<li><%= link_to "Photo Gallery", '#' %></li>
+					<li><%= link_to "Sponsors", '#' %></li>
 				</ul>
 			</li>
 			<li><%= link_to "Education Sessions", '#' %></li>
-			<li><%= link_to "Sponsors", sponsors_path %></li>
 			<li><%= link_to "Contact Us", contact_us_path %></li>
 		</ul>
 	</div>
   <!-- end #header --></div>
   <div id="sidebar1">
-    <%= link_to "Register Now!", '#', :class => "registration_button round" %>
+    <h4>Register Now!</h4>
 
 
 

@@ -11,10 +11,13 @@ SpringConference2012::Application.routes.draw do
 
   get "pages/photo_gallery"
 
-	root :to => "pages#home"
-
-	match '/contact_us', :to => 'pages#contact_us'
-
+  root :to => "pages#home"
+  match '/', :to => 'pages#home'
+  match '/contact_us', :to => 'pages#contact_us'
+  match '/feature_speakers_and_events', :to => 'pages#feature_speakers_and_events'
+  match '/agenda', :to => 'pages#agenda'
+  match '/sponsors', :to => 'pages#sponsors'
+  match '/photo_gallery', :to => 'pages#photo_gallery'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
