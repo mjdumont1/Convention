@@ -1,0 +1,165 @@
+/* CSS Document */
+
+body  {
+	font: 100% Veranda , Arial, Helvetica, sans-serif;
+	background:#CCCCCC;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	color: #000000;
+}
+p.mainpar {font-size:11px;
+
+}
+
+a {
+color: #0066CC;
+text-decoration: none;
+font-weight:100;
+font-size:16px;
+margin: 3px;
+padding: 0;
+} 
+
+
+h4 {
+color:#0066CC;
+}
+
+h1 {
+color:#0066CC;
+}
+
+li.teamlist {
+	font-size:14px;
+
+}
+
+a:hover {background-color:#FFF;}
+a:visited {color:#FFFFFF;}
+
+.twoColFixRtHdr #container { 
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 4px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColFixRtHdr #header { 
+	background: black; 
+	padding: 0 10px 0 20px;
+	}
+	
+.dropnav{
+ 	
+	width:775px;
+  	height:35px;
+  	margin-left:0;
+	padding: 0 -100px 0 -100px;
+	}
+
+.dropnav li {
+  width:164px;
+  padding:0;
+  margin: 0 0 0 -66px;
+  float: left;
+  list-style:none;
+  padding-right:6.5px;
+}
+
+.dropnav a {
+  width:50px;
+  height:35px;
+  background:black;
+  display:block;
+  text-align:left;
+  line-height:35px;
+  margin:0 6px;
+  padding:0;
+  text-decoration:none;
+  color:blue;
+  font-family:100% Verdana, Arial, Helvetica, sans-serif;
+  font-size:16px;
+  font-weight: bold;
+  
+}
+
+.dropnav a:hover {
+  background-color:#CCCCCC;
+}
+
+.dropnav li ul {
+  display:none;
+}
+ 
+.dropnav li:hover ul {
+  width:105px;
+  position:absolute;
+  display:block;
+  list-style:none;
+  padding:0;
+  margin:0 6px;
+  background:#c0c0c0;
+}
+
+.dropnav li ul a {
+  width:150px;
+  height:35px;
+  display:block;
+  margin:0 6px;
+  padding:0;
+  background:black;
+  color:#0066CC;
+}
+
+.dropnav li ul a:hover {
+  background-color:#CCCCCC;
+}
+
+
+
+.twoColFixRtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 1px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.twoColFixRtHdr #sidebar1 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px;
+    margin: 15px 0 0 0;
+}
+.twoColFixRtHdr #mainContent {
+	margin: 0 250px 0 0; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	font-family: Veranda, Arial, Helvetica, sans-serif;
+} 
+.twoColFixRtHdr #footer { 
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD; 
+} 
+.twoColFixRtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+
+.twoColFixRtHdr #container #mainContent .mainpar {
+	font-size: 14px;
+}
+.twoColFixRtHdr #container #mainContent .mainpar {
+	font-size: 16px;
+}
