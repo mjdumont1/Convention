@@ -1,4 +1,10 @@
 SpringConference2012::Application.routes.draw do
+  resources :users
+
+  get "users/new"
+
+  match '/registration', :to => 'users#new'
+
   get "pages/home"
 
   get "pages/agenda"

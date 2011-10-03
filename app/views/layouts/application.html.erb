@@ -44,7 +44,7 @@
 	</div>
   <!-- end #header --></div>
   <div id="sidebar1">
-    <%= link_to "Register Now!", '#', :class => "registration_button round" %>
+    <%= link_to "Register Now!", registration_path, :class => "registration_button round" %>
 
 
 
@@ -59,6 +59,7 @@
     
     <br />
   <!-- end #footer --></div>
+<%= debug(params) if Rails.env.development? %>
 <!-- end #container --></div>
 
 </body>
