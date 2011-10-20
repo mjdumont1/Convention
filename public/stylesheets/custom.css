@@ -2,51 +2,61 @@
 
 body  {
 	font: 100% Veranda , Arial, Helvetica, sans-serif;
-	background:#CCCCCC;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
-	padding: 0;
+	padding: 60px 0px 60px 0px;
 	color: #000000;
+	background: #004165; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDE2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjExJSIgc3RvcC1jb2xvcj0iIzAwNDE2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIzJSIgc3RvcC1jb2xvcj0iIzAwNDE2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhOWIyYjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #004165 0%, #004165 11%, #004165 23%, #a9b2b1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004165), color-stop(11%,#004165), color-stop(23%,#004165), color-stop(100%,#a9b2b1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #004165 0%,#004165 11%,#004165 23%,#a9b2b1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #004165 0%,#004165 11%,#004165 23%,#a9b2b1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #004165 0%,#004165 11%,#004165 23%,#a9b2b1 100%); /* IE10+ */
+background: linear-gradient(top, #004165 0%,#004165 11%,#004165 23%,#a9b2b1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004165', endColorstr='#a9b2b1',GradientType=0 ); /* IE6-8 */
 }
-p.mainpar {font-size:11px;
-
+p.mainpar {
+	font-size:11px;
 }
 
 a {
-color: #0066CC;
-text-decoration: none;
-font-weight:100;
-font-size:16px;
-margin: 3px;
-padding: 0;
+	color: #0066CC;
+	text-decoration: none;
+	font-weight:100;
+	font-size:13px;
+	margin: 0px;
+	padding: 0;
 } 
 
 
-h4 {
-color:#0066CC;
+h1 {
+	color:#772432;
+	font-weight: bold;
 }
 
-h1 {
-color:#0066CC;
+h2 {
+	color:#004165;
+	font-weight: bold;
 }
 
 li.teamlist {
 	font-size:14px;
-
 }
 
-a:hover {background-color:#FFF;}
+/*a:hover {background-color:#FFF;}*/
 a:visited {color:#FFFFFF;}
 
 .twoColFixRtHdr #container { 
-	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
-	background: #FFFFFF;
+	width: 980px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #A9B2B1;
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-	border: 4px solid #000000;
+	border: 1px solid #000000;
 	text-align: left; /* this overrides the text-align: center on the body element. */
 } 
 .twoColFixRtHdr #header { 
-	background: black; 
-	padding: 0 0px 0 0px;
+	background: #004165; 
+	padding: 0px 0px 0px 0px;
 	}
 	
 *{ margin: 0px; padding: 0px; }
@@ -54,11 +64,13 @@ a:visited {color:#FFFFFF;}
 #nav {
 			font-family: arial, sans-serif;
 			position: relative;
-			width: 800px;
-			height: 50px;
+			width: 980px;
+			height: 27px;
 			font-size: 14px;
-			color: #0066CC;
+			color: #004165;
+			bottom: 20px;
 			margin: 0px auto;
+			z-index: 5;
 			}
 
 #nav ul {
@@ -68,6 +80,7 @@ a:visited {color:#FFFFFF;}
 #nav ul li {
 			float: left;
 			position: relative;
+			left: 60px;
 			}
 
 #nav ul li a {
@@ -77,12 +90,18 @@ a:visited {color:#FFFFFF;}
 			padding: 10px;
 			display: block;
 			text-decoration: none;
-			color: #0066CC;
+			color: #FFF;
 			font-weight: bold;
+			width: 110px;
+			}
+#nav ul li a:hover {
+			background: #F2DF74;
+			color: #004165;
 			}
 
 #nav ul li ul {
 			display: none;
+			right: 60px;
 			}
 
 #nav ul li:hover ul {
@@ -92,8 +111,8 @@ a:visited {color:#FFFFFF;}
 
 #nav ul li:hover ul li a {
 			display: block;
-			background: black;
-			color: #0066CC;
+			background: #004165;
+			color: #fff;
 			width: 110px;
 			text-align: center;
 			border-bottom: 1px solid #f2f2f2;
@@ -101,8 +120,8 @@ a:visited {color:#FFFFFF;}
 			}
 
 #nav ul li:hover ul li a:hover {
-			background: #6dc7ec;
-			color: #fff;
+			background: #F2DF74;
+			color: #004165;
 			}
 
 
@@ -113,9 +132,9 @@ a:visited {color:#FFFFFF;}
 .twoColFixRtHdr #sidebar1 {
 	float: right; /* since this element is floated, a width must be given */
 	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
-	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	background: #A9B2B1; /* the background color will be displayed for the length of the content in the column, but no further */
 	padding: 15px 10px;
-    margin: 15px 0 0 0;
+    	margin: 15px 0 0 0;
 }
 .twoColFixRtHdr #mainContent {
 	margin: 0 250px 0 0; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
@@ -123,9 +142,26 @@ a:visited {color:#FFFFFF;}
 	font-family: Veranda, Arial, Helvetica, sans-serif;
 } 
 .twoColFixRtHdr #footer { 
-	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
-	background:#DDDDDD; 
+	padding: 0 0px 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#A9B2B1; 
 } 
+
+.twoColFixRtHdr #top_footer { 
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background: #004165; 
+}
+
+.twoColFixRtHdr #mid_footer { 
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background: #F2DF74;
+	text-align: center;
+	text-size: 14px; 
+}
+
+.twoColFixRtHdr #bottom_footer { 
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#A9B2B1; 
+}
 .twoColFixRtHdr #footer p {
 	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
 	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
@@ -160,12 +196,21 @@ a.registration_button {
 	margin-right: auto;
 	display: block;
 	text-align: center;
-	width: 150px;
+	width: 180px;
 	color: #fff;
-	background: #FF0000;
+	background: #CD202C;
 	font-size: 150%;
 	font-weight: bold;
 	padding: 10px;
+}
+
+
+/* Navigation Links */
+a.nav_links {
+	font-size: 16px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius:	10px;
 }
 
 /* Navigation */
@@ -175,7 +220,7 @@ nav {
 }
 
 nav {
-	background-color: black;
+	background-color: #004165;
 	padding: 0 0.7em;
 	white-space: nowrap;
 }
@@ -211,3 +256,26 @@ nav ul li a:hover {
 	-webkit-border-radius: 10px;
 	border-radius:	10px;
 }
+
+/* Bottom Alignments */
+
+.footer_left {
+	float: left;
+}
+
+a.footer_left {
+	color: #000000;
+	text-decoration: none;
+	font-weight:100;
+	font-size:16px;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	top: 20px;
+}
+
+.footer_right {
+	float: right;
+	font-size: 12px;
+}
+
+

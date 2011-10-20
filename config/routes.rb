@@ -1,29 +1,54 @@
 SpringConference2012::Application.routes.draw do
-  resources :users
-
-  get "users/new"
-
-  match '/registration', :to => 'users#new'
+  
 
   get "pages/home"
-
-  get "pages/agenda"
-
-  get "pages/feature_speakers_and_events"
-
+  get "pages/program"
+  get "pages/schedule"
   get "pages/sponsors"
-
   get "pages/contact_us"
-
-  get "pages/photo_gallery"
+  get "pages/keynote"
+  get "pages/registration"
+  get "pages/educationals"
+  get "pages/speaker_bios"
+  get "pages/faq"
+  get "pages/prizes"
+  get "pages/terms_conditions"
+  get "pages/venue"
+  get "pages/about_calgary"
+  get "pages/our_sponsors"
+  get "pages/volunteers"
+  get "pages/application"
+  get "pages/about"
+  get "pages/welcome_message"
+  get "pages/about_tm"
+  get "pages/planning_team"
+  get "pages/disclaimer"
+  
 
   root :to => "pages#home"
   match '/', :to => 'pages#home'
   match '/contact_us', :to => 'pages#contact_us'
-  match '/feature_speakers_and_events', :to => 'pages#feature_speakers_and_events'
-  match '/agenda', :to => 'pages#agenda'
+  match '/schedule', :to => 'pages#schedule'
+  match '/program', :to => 'pages#program'
   match '/sponsors', :to => 'pages#sponsors'
-  match '/photo_gallery', :to => 'pages#photo_gallery'
+  match '/keynote', :to => 'pages#keynote'
+  match '/registration', :to => 'pages#registration'
+  match '/educationals', :to => 'pages#educationals'
+  match '/speaker_bios', :to => 'pages#speaker_bios'
+  match '/faq', :to => 'pages#faq'
+  match '/prizes', :to => 'pages#prizes'
+  match '/terms_conditions', :to => 'pages#terms_conditions'
+  match '/venue', :to => 'pages#venue'
+  match '/about_calgary', :to => 'pages#about_calgary'
+  match '/our_sponsors', :to => 'pages#our_sponsors'
+  match '/volunteers', :to => 'pages#volunteers'
+  match '/application', :to => 'pages#application'
+  match '/about', :to => 'pages#about'
+  match '/welcome_message', :to => 'pages#welcome_message'
+  match '/about_tm', :to => 'pages#about_tm'
+  match '/planning_team', :to => 'pages#planning_team'
+  match '/disclaimer', :to => 'pages#disclaimer'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

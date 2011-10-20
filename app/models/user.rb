@@ -26,11 +26,13 @@
 
 class User < ActiveRecord::Base
 
+  attr_accessor :password
   attr_accessible :first_name, :last_name, :address, :city, 
                   :posta_code, :province, :home_phone, :work_phone,
                   :fax, :email, :special_dietary_needs, :home_club_name,
                   :home_club_number, :toastmaster, :area,
-                  :club_executive_position, :tm_designation
+                  :club_executive_position, :tm_designation, :password,
+		  :password_confirmation
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -51,5 +53,9 @@ class User < ActiveRecord::Base
   validates :email,		:presence => true
 				:format	  => { :with => email_regex }
 				:uniqueness => { :case_sensitive => false }
+
+  validates :password,		:presence     => true,
+				:confirmation => true,
+				:length       => { :within => 6..40 }
 
 end
